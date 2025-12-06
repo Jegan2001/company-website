@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CorelytlQ IT Company</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">CorelytlQ</a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+      <button id="menuToggle" class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <h1>Build. Automate. Scale.</h1>
+          <p>End-to-end software, cloud & data solutions for modern businesses.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn">Get a Quote</a>
+            <a href="#services" class="link-btn">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-ill">
+          <svg width="360" height="220" viewBox="0 0 360 220" role="img" aria-hidden="true">
+            <rect x="0" y="0" width="360" height="220" rx="12" fill="#f0f4ff"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#6b78ff" font-size="18">Your product image</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Services</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>Responsive front-end and robust back-end solutions.</p>
+        </article>
+        <article class="card">
+          <h3>Cloud & DevOps</h3>
+          <p>CI/CD, containerisation, infra as code, cloud migrations.</p>
+        </article>
+        <article class="card">
+          <h3>Data & AI</h3>
+          <p>Analytics, dashboards, ML pipelines and automation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section alt">
+      <div class="container">
+        <h2>Recent Work</h2>
+        <div class="grid-3">
+          <div class="work-item">Project A — SaaS dashboard</div>
+          <div class="work-item">Project B — E-commerce</div>
+          <div class="work-item">Project C — Automation</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About Us</h2>
+      <p>We are a small team of engineers and designers focused on shipping high quality digital products fast.</p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <input name="name" id="name" placeholder="Your name" required />
+          <input name="email" id="email" placeholder="Email" type="email" required />
+        </div>
+        <textarea name="message" id="message" placeholder="How can we help?" required></textarea>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <span id="formStatus" class="status"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> CorelytlQ IT Company — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
